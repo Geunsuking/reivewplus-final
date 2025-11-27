@@ -9,12 +9,14 @@ import javax.swing.text.html.HTML.Attribute;
 import com.review.Enum.SocialType;
 import com.review.entity.userEntity;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 
 
 @Data
 @Builder
+@AllArgsConstructor
 public class OAuth2Attributes {
 	 	private final Map<String, Object> attributes; // 구글에서 받은 원본 정보
 	    private final String nameAttributeKey; // 사용자 이름 키 (google은 "sub")
@@ -27,7 +29,7 @@ public class OAuth2Attributes {
 	    
 	    
 	    
-	    @Builder
+	    
 	    public OAuth2Attributes(Map<String, Object> attributes, String nameAttributeKey, 
 	                            String name, String email ,String birthdate ,String picture,String nickname,SocialType socialType) {
 	        this.attributes = attributes;
