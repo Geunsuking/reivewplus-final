@@ -1,0 +1,125 @@
+.main-carousel-wrapper {    
+    width: 90%;
+    max-width: 1470px; 
+    margin: 20px auto;
+    padding:15px;
+}
+
+.carousel-container {
+  width: 100%;             
+  margin: 20px auto;
+  position: relative;
+  overflow: hidden; 
+  font-family: 'Arial', sans-serif;
+  background-color: #192839;   
+  box-shadow: none;
+  min-height : 250px;
+  border-radius: 10px;
+  height: auto; 
+  height:250px;
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
+}
+
+.news-title {
+  color : #ff4d4d;
+  margin-top: 0; 
+  margin-bottom: 10px; 
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0px;
+  width: 100%;   
+}
+
+.news-item {
+  flex: 0 0 100%;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100%;
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding-left: 0;
+  border: 0;
+  scroll-snap-align: center;
+}
+
+.news-list {
+  display: flex;
+  height: 100%;
+  width:100%;
+  margin: 0;
+  padding: 0;
+  gap: 0;
+  transition: transform 0.5s ease;
+  
+}
+
+.news-item a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0; 
+  opacity: 0.3; 
+  top: 0;
+  left: 0; 
+  z-index: 1; 
+  object-fit: fill;
+}
+
+.news-item img {
+  position: absolute;
+  height: 100%;
+  width:100%;
+  margin-bottom: 0; 
+  opacity: 0.3; 
+  top: 0;
+  left: 0; 
+  z-index: 1; 
+  object-fit: cover;
+}
+
+.news-item .title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 5px; 
+  color: white;
+  text-align: center;
+}
+
+.news-item .date {
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
+
+.news-item p {
+  position: relative; 
+  z-index: 2; 
+  text-align: center; 
+  
+  color: #ff4d4d; 
+}
+
+
+.news-item .title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 5px; 
+}
+
+.news-item .date {
+  color: white;
+  font-size: 14px;
+}
+
+
+.flickity-button {
+    width: 40px !important;
+    height: 40px !important;
+    
+    
+}
+

@@ -1,0 +1,635 @@
+	body{
+	padding:0;
+	margin:0;
+    color: #333;
+    align-items: center;
+    background-color: #040F16;
+	}
+	
+	
+	/* 1. 기본 스타일: 넓은 화면에서는 가로로 배치 */
+	.movie-info-section {
+	    display: flex;
+	    gap: 30px;
+	    margin-top: 20px;
+	    padding: 15px;
+	    color: grey;
+	}
+
+	
+	/* 영화 메인 스틸컷 */
+	.stillcut-image{
+	max-width:600px;
+	max-height:600px;
+	}	
+	
+	
+	/* 영화 상세 메인 포스터 */
+	#MoviePosterMain{
+	width: 100%;
+	height: 100%; 
+	border-radius: 8px;
+	max-width:500px;
+	}	
+	
+	
+	
+	
+	/* 리뷰 프로필 디자인 */
+	.review-profile-area .profile-image {
+	    width: 50px; 
+	    height: 50px; 
+	    border-radius: 50%;
+	    object-fit: cover; 
+	    border: 2px solid #EEE;
+	    margin-right: 10px; 
+	}
+
+	.review-profile-area {
+    display: flex; 
+    align-items: center; 
+    margin-right: 15px; 
+}
+	
+	
+	/* =======리뷰작성 디자인======= */
+	.rating-area {
+	  display: flex;
+	  font-size: 2em;
+	  color: #ccc;
+	  cursor: pointer;
+	  user-select: none;
+	}
+	
+	.star {
+	  transition: color 0.2s;
+	}
+	
+	.star.on {
+	  color: gold;
+	}
+	
+	.star.hover {
+	  color: orange;
+	}
+	
+	/* 리뷰목록 디자인  */
+	#reviewsRegdate{
+	 font-size: 0.8em; 
+	 color: #666; 
+	 margin-top: 5px;
+	}
+	
+	#reviews{
+	border: 1px solid #ccc; 
+	margin-bottom: 10px; 
+	padding: 10px;
+	}
+	
+	
+	#reviewsRating{
+	padding-right: 10px;
+	}
+	
+	
+	#reviewsRating > span{
+	color: gold;
+	}
+	
+	
+	.ReplyComment{
+		width:90%;
+		border-radius:15px;
+		padding:10px;
+		background-color: #191932;
+		color:white;
+		font-size:14px;
+		max-width: 350px; 
+	    height: 100px;
+	    resize: none;
+	    margin-top:20px;
+	}
+	
+	
+
+/* 대댓글디자인 */
+.reply-item{
+	margin-left: 50px;
+	margin-bottom:10px;	
+	border: 1px soild;
+	box-shadow: 0 5px 7px rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+	padding: 10px;
+}
+
+/* 대댓글 토글 버튼 디자인 */
+.reply-toggleButton{
+	border:1px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8); 
+	padding:10px;
+	width: 60px;
+	border-radius:6px;
+	text-decoration: none;
+	font-size: 14px;
+	cursor: pointer;
+	
+}
+.reply-toggleButton:hover{
+	
+	background-color:#061123;
+	
+}
+
+
+
+
+/* 좋아요 버튼의 기본 스타일 */
+.like-btn {
+    background-color: #f0f0f0; 
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 20px; 
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer; 
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s, transform 0.1s; 
+    letter-spacing: 1px;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 마우스 오버 시 스타일 (호버 효과) */
+.like-btn:hover {
+    background-color: #e0e0e0;
+    border-color: #a0a0a0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+/* 클릭 시 스타일 (활성 상태) */
+.like-btn:active {
+    transform: scale(0.98);
+}
+
+/* '좋아요'를 누른 상태의 스타일 (클래스: liked) */
+.like-btn.liked {
+    /* 배경 및 테두리 */
+    background-color: #ff4d4d;
+    color: white; 
+    border-color: #ff4d4d;
+    font-weight: bolder;
+}
+
+/* '좋아요'를 누른 상태의 마우스 오버 시 스타일 */
+.like-btn.liked:hover {
+    background-color: #cc0000;
+    border-color: #cc0000;
+}
+
+/* 리뷰 등록 버튼 기본 스타일 */
+#submit-review-btn {
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    border-radius: 8px; 
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase; 
+    cursor: pointer;
+    margin-top: 15px; 
+    display: block; 
+    width: auto;
+    transition: background-color 0.3s, transform 0.1s, box-shadow 0.3s; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+/* 마우스 오버 시 스타일 (호버 효과) */
+#submit-review-btn:hover {
+    background-color: #45a049; 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); 
+}
+
+/* 클릭 시 스타일 (활성 상태) */
+#submit-review-btn:active {
+    background-color: #3e8e41; 
+    transform: translateY(1px); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+/* [수정된] 영화 상세 정보 컨테이너 스타일 */
+#movie-detail-container {
+	background-color: #040F16;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+    margin-top: 85px;
+}
+
+
+/* 영화 상세페이지 제목 스타일 */
+h2 {
+    font-size: 26px;
+    font-weight: 700; 
+    color: #1a1a1a;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    margin-top: 0; 
+}
+
+.movie-actions {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+
+/* 별점 평균 표시 스타일 */
+.rating-display h3 {
+    font-size: 20px;
+    color: #555;
+    margin: 0;
+}
+
+/* 좋아요 버튼 스타일 (이전에 제안된 것과 유사하지만 전문성 강화) */
+.like-btn {
+    background-color: #f0f0f0;
+    color: #555;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.like-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.like-btn.liked {
+    background-color: #ff4d4d;
+    color: white;
+    border-color: #ff4d4d;
+    box-shadow: 0 2px 8px rgba(255, 77, 77, 0.4);
+}
+
+.like-btn.liked:hover {
+    background-color: #cc0000;
+    border-color: #cc0000;
+}
+
+/* 내 리뷰 작성 컨테이너 스타일 */
+.review-form-container {
+    background-color: #040F16;
+    padding: 30px; 
+    color : white;
+    border-bottom: 1px solid gray;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+/* 추가적으로, 입력 필드도 시각적으로 개선하여 폼의 전문성을 높입니다. */
+#review-comment {
+    width: 100%;
+    max-width: 100%;
+    min-height: 100px;
+    padding: 12px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    background-color: #333;
+    color:white;
+    font-size: 15px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#review-comment:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* 리뷰 등록 버튼 스타일 (강조) */
+#submit-review-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    margin-top: 15px;
+}
+
+#submit-review-btn:hover {
+    background-color: #0056b3;
+}
+
+#submit-review-btn:active {
+    transform: scale(0.98);
+}
+
+.review-list-container {
+	background-color: #040F16;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.no-reviews-message {
+    text-align: center;
+    padding: 30px;
+    color: #999;
+    font-style: italic;
+}
+
+/* 개별 리뷰 카드 스타일 */
+.review-item {
+    padding: 20px;
+    margin-bottom: 15px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: box-shadow 0.2s;
+}
+
+.review-item:hover {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f0f0f0;
+    margin-bottom: 10px;
+}
+
+.review-header strong {
+    color: #1a1a1a;
+    font-size: 16px;
+}
+
+.review-header span {
+    font-weight: 500;
+    color: #333;
+}
+
+.deleted-user {
+    color: #999;
+    font-style: italic;
+}
+
+.review-content {
+    margin-bottom: 10px;
+}
+
+.review-rating-info {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.review-stars {
+    color: #ffc107;
+    letter-spacing: 2px;
+}
+
+.review-text {
+    font-size: 15px;
+    color: #555;
+    white-space: pre-wrap;
+}
+
+.review-footer {
+    font-size: 13px;
+    color: #999;
+    text-align: right;
+    margin-top: 10px;
+    padding-top: 5px;
+    border-top: 1px solid #f9f9f9;
+}
+
+/* 리뷰 액션 버튼 영역 */
+.review-actions {
+    margin-top: 10px;
+    display: flex;
+    gap: 8px;
+}
+
+/* 공통 버튼 스타일 */
+.review-actions button {
+    padding: 6px 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+/* 수정 버튼 */
+.review-actions .edit-btn {
+    background-color: #F0F0F0; 
+    color: black;
+}
+
+.review-actions .edit-btn:hover {
+    background-color: #45a049;
+}
+
+/* 삭제 버튼 */
+.review-actions .delete-btn {
+    background-color: #F0F0F0; 
+    color: black;
+}
+
+.review-actions .delete-btn:hover {
+    background-color: #da190b;
+}
+
+
+.review-box{
+	font-size : 20px;
+}
+
+/* --- 모달 오버레이 스타일 (전체 화면 배경) --- */
+#editReviewModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none; 
+    z-index: 1000;
+}
+
+
+/* --- 모달 내용 박스 스타일 --- */
+/* 원래 HTML 구조의 인라인 스타일을 대체하여 더 깔끔하게 만듭니다. */
+#editReviewModal > div {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 90%; 
+    max-width: 450px; 
+    padding: 30px;
+    border-radius: 12px; 
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transform: scale(1);
+    transition: transform 0.3s ease-out;
+}
+
+#editReviewModal h3 {
+    text-align: center;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #eee; /* 제목 아래 구분선 */
+    padding-bottom: 10px;
+}
+
+/* --- 폼 그룹 및 라벨 스타일 --- */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label,
+.form-group strong {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+    font-size: 1rem;
+}
+
+/* --- 댓글 입력창 스타일 --- */
+#editComment {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    resize: vertical; 
+    color:white;
+    box-sizing: border-box;
+    font-size: 0.95rem;
+    transition: border-color 0.2s;
+    background-color: #333;
+}
+
+#editComment:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+/* --- 평점 (별점) 영역 스타일 --- */
+#editRatingArea {
+    display: flex;
+    gap: 5px;
+    font-size: 2rem; 
+    cursor: pointer;
+    justify-content: center; 
+}
+
+/* --- 버튼 스타일 --- */
+#editReviewModal button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-left: 10px;
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+#editReviewModal button:first-child {
+    margin-left: 0; 
+}
+
+#saveEditBtn {
+    background-color: #007bff;
+    color: white;
+}
+
+#saveEditBtn:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+/* 취소 버튼 */
+#editReviewModal button[onclick*='none'] {
+    background-color: #6c757d; /* 회색 계열의 '취소' 버튼 */
+    color: white;
+}
+
+#editReviewModal button[onclick*='none']:hover {
+    background-color: #5a6268;
+    box-shadow: 0 4px 8px rgba(108, 117, 125, 0.3);
+}
+
+/* 버튼들을 오른쪽으로 정렬 */
+#editReviewModal > div > button {
+    float: right;
+    margin-top: 10px;
+}
+
+#editReviewModal > div::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* --- 반응형 디자인 --- */
+@media (max-width: 500px) {
+    #editReviewModal > div {
+        margin: 50px auto; 
+        padding: 20px;
+    }
+    
+    #editRatingArea {
+        font-size: 1.8rem; 
+    }
+
+    #editReviewModal button {
+        width: 100%; 
+        margin: 5px 0 0 0 !important; 
+        float: none !important; 
+    }
+}
+
+/* 2. 작은 화면에서 세로로 쌓이도록 변경 */
+@media (max-width: 800px) {
+    .movie-info-section {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+    }
+    
+    #MoviePosterMain {
+        max-width: 400px; 
+        width: 100%;
+    }
+    
+    .info-details {
+        text-align: left;
+        width: 100%; 
+    }
+}
+	

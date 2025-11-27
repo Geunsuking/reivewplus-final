@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'GMarketSans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;
+}
+
+
+body{
+	margin:0;
+	padding:0;
+	background-color: #040F16;
+	font-family: 'GMarketSans', sans-serif;
+	font-size:12px;
+	font-size: 13px;
+}
+
+
+#MainMovieListName{
+	color:#E84545;
+	      
+}
+	
+#MainMovieListName:hover{
+color:white;
+}
+
+#indexMovieList{
+	margin-top:80px;
+}
+#MovieList{
+	margin-top:140px;
+}
+
+
+/* 메인 최신리뷰 카드 */
+.review-container {
+	  display: flex;
+	  overflow-x : auto;
+	  gap: 15px; 
+	  padding : 10px 0;
+}
+
+.review-card {
+  flex-shrink:0;
+  width:100%;
+  width: 200px;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: transform 0.2s;
+  height: 150px;          
+  position: relative;
+  background-color:  #061123;
+  overflow: hidden;
+}
+
+.review-card:hover{
+	transform: translateY(-5px); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 최신리뷰 안 내용 */
+.review-card span , .review-card b{
+  display: block;
+  margin-bottom: 4px;
+  color: white;
+}
+
+
+.review-contatiner{
+	-webkit-overflow-scrolling: touch;
+	
+	
+}
+
+/* index comment 넘침 방지  */
+#comment {
+  overflow: hidden;         
+  text-overflow: ellipsis;  
+  display: -webkit-box;    
+  -webkit-line-clamp: 2;  
+  -webkit-box-orient: vertical; 
+  color:white;
+}
+
+/* 최신리뷰 카드 평점 오른쪽 상단 */
+.rating{
+	position: absolute; 
+    top: 10px;          
+    right: 10px;        
+    margin: 0; 
+    padding: 0;
+    z-index: 10; 
+}
+
+/* 최신리뷰 카드 작성일 */
+#regdate{
+	position: absolute; 
+    bottom: 15px;          
+    left: 20px;        
+    margin: 0; 
+    padding: 0;
+    z-index: 10;
+    font-size:13px;
+    color: gray;
+}
+
+.review-card hr {
+	position: absolute; 
+    width: 100%; 
+    bottom: 40px; 
+    left: 0;      
+    height: 1px; 
+    border: none;
+    background-color: #ddd;
+    margin: 0; 
+    z-index: 5; 
+}

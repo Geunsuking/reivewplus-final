@@ -1,0 +1,481 @@
+/* ==== 모든 메뉴 글꼴 적용 ==== */
+li {
+	font-family: 'GMarketSans', sans-serif;
+}
+
+/* ======= 대시보드 ======= */
+.dashboard-container {
+    display: flex;
+}
+
+/* ==== 사이드 바 ==== */
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 90px;
+    min-width: 90px;
+    transition: all 0.25s ease-in-out;
+    background-color: #0b0f19;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+#sidebar.expand {
+    width: 300px;
+    min-width: 300px;
+}
+
+.sidebar-widget {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.5rem;
+}
+
+.toggle-btn {
+	width: 30px;
+	height: 30px;
+	color: #FFF;
+	border-radius: 0.425rem;
+	font-size: 1.125rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #323c55;
+	border: none;
+}
+
+#sidebar:not(.expand) .sidebar-logo,
+#sidebar:not(.expand) a.sidebar-link span {
+	display: none;
+}
+
+.sidebar-nav {
+	padding: 0;
+	flex: 1 1 auto;
+}
+
+a.sidebar-link {
+	padding: .625rem 1.625rem;
+	color: #FFF;
+	display: block;
+	font-weight: 700;
+	white-space: nowrap;
+	border-left: 3px solid transparent;
+}
+
+.sidebar-link i {
+	font-size: 1.1rem;
+	margin-right: .75rem;
+}
+
+.sidebar-item{
+	position: relative;
+	margin: 5px 0;
+}
+
+a.sidebar-link:hover,
+.sidebar-link:active {
+	background-color: #aeaeae29;
+	border-left: 3px solid #e84545;
+}
+
+/* ===== 메인(테이블 부분) ===== */
+.main {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	overflow: hidden;
+	transition: all 0.25s ease-in-out;
+	background: #FFF;
+	width: 100%;
+}
+/* 맨 위에 하얀 줄 */
+nav {
+	display: flex;
+	padding: 1rem 1.5rem;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	box-shadow: 0 0 2rem rgba(33,37,41,.1);
+}
+form {
+	display: none;
+}
+/* 테이블 컨테이너 */
+.content {
+	flex: 1 1 auto;
+	padding: 1rem 1.5rem;
+	background-color: #f2f2f2;
+}
+.content .dashboard-container {
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+/* 카드 부분 */
+.main-cards {
+	width: 100%;
+    grid-template-rows: repeat(1, 1fr);
+    margin: 1rem 0;
+    display: grid;
+    gap: 2rem;
+    max-width: 100%;
+}
+.card {
+	display: flex;
+	align-items: center;
+	padding: 1rem;
+	color: #FFF;
+	background-color: #061123;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.card-content {
+	width: 90%;
+}
+.card-content .title {
+	font-size: 1.25rem;
+}
+.amount {
+	font-size: 1rem;
+}
+
+/* ======= 목록 테이블 부분 ======== */
+.dashboard-table {
+	overflow-x: auto;
+}
+
+h2 {
+	padding: 1rem;
+}
+
+.table {
+	width: 100%;
+	border: 1px solid #cccccc;
+	border-collapse: collapse;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	min-width: 900px;
+	max-width: 1024px;
+}
+.table th {
+	background-color: #e0e0e0;
+	font-size: 0.938rem;
+}
+
+.table td, th {
+	font-family: 'AstaSans', sans-serif;
+	border: 1px solid #cccccc;
+	padding: 0.8rem 1.5rem;
+	text-align: center;
+	min-width: 100px;
+}
+.table td {
+	max-width: 300px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.table a {
+	color: black;
+}
+
+/* ======= 데이터테이블 테이블 정렬 ======== */
+#UserDataTable th.dt-center,
+#UserReviewDataTable th.dt-center,
+#UserMovieLikeDataTable th.dt-center {
+    text-align: center !important;
+}
+
+#UserDataTable td.dt-center,
+#UserReviewDataTable td.dt-center,
+#UserMovieLikeDataTable td.dt-center {
+    text-align: center !important;
+}
+
+/* ==== 검색 바 ====*/
+form {
+    display: inline-block;
+}
+
+.input-group {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	width: 100%;
+	max-width: 320px;
+}
+
+.input-field {
+	position: relative;
+	flex: 1 1 auto;
+	width: 1%;
+	min-width: 0;
+	color: #3e4455;
+	background-color: #ebebeb;
+	height: calc(2.44375rem + 2px);
+	border: 0;
+	display: block;
+  	padding: .375rem .75rem;
+  	font-size: 1rem;
+  	font-weight: 400;
+  	line-height: 1.5;
+}
+
+.input-field:focus {
+   outline: none;
+   box-shadow: 0 0 0 0 rgba(255, 255, 255);
+   border: none;
+   background-color: #ebebeb;
+}
+
+.search-btn {
+   color: #000;
+   background-color: #ebebeb;
+   cursor: pointer;
+   z-index: 1000;
+   position: relative;
+   padding: 0.75rem 1rem;
+   border: 0;
+}
+.search-btn:hover,
+.search-btn:focus {
+  opacity: .75;
+}
+
+/* ====== 상세 테이블 ====== */
+.detail-table {
+	margin-top: 20px;
+	margin-bottom: 50px;
+	min-width: 400px;
+	max-width: 1000px;
+	border: 1px solid #e0e0e0;
+	border-collapse: collapse;
+}
+.detail-table td {
+	padding: 1rem;
+	border: 1px solid #e0e0e0;
+}
+.detail-table .label-td {
+	background-color: #ebebeb;
+}
+.detail-table .inputbar {
+	padding: 0.5rem;
+	border: none;
+	background-color: #e0e0e0;
+}
+.detail-table .textarea {
+	height: 250px;
+	width: 300px;
+	background-color: #e0e0e0;
+	border: none;
+	padding: 0.5rem;
+	font-size: 1rem;
+}
+.detail-table .labelname, .inputbar, .textarea {
+	font-family: 'AstaSans', sans-serif;
+}
+
+/* === 상세 테이블 밑 버튼 === */
+.btn-detail-container {
+	width: 20%;
+	display: flex;
+	align-items: flex-start;
+}
+.btn-detail {
+  background-color: #222;
+  border-radius: 4px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "AstaSans", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 15px;
+  max-width: 300px;
+  min-height: 44px;
+  min-width: 100px;
+  outline: none;
+  overflow: hidden;
+  padding: 0.3rem;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 30%;
+}
+
+.btn-detail:hover,
+.btn-detail:focus {
+  opacity: .75;
+}
+
+.btn-edit {
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	background-color: #222222;
+	color: white;
+	border: 1px solid black;
+	border-radius: 4px;
+	font-size: 1em;
+	cursor: pointer;
+	font-family: 'AstaSans', sans-serif;
+}
+
+/* ====== 푸터 ====== */
+footer .dashboard-container {
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem 1.5rem;
+}
+
+.copyright-text a {
+	color: #000;
+}
+
+/* ===== 모달 창 ===== */
+#UserReviewsList{
+	position: relative;
+	cursor:pointer;
+		
+}
+
+#UserReviewsList:hover{
+	background-color: #f0f0f0;
+	transition: background-color 0.2s ease;
+}
+#UserList{
+	position: relative;
+	cursor:pointer;
+}
+#UserList:hover{
+	background-color: #f0f0f0;
+	transition: background-color 0.2s ease;
+}
+
+.modal {
+   display: none; 
+   position: fixed; 
+   z-index: 1000; 
+   left: 0;
+   top: 0;
+   width: 100%; 
+   height: 100%; 
+   overflow: auto; 
+   background-color: rgba(0,0,0,0.4);
+}
+
+/* 모달 내부 스타일 */
+.modal-content {
+	display: flex;            
+    flex-direction: column; 
+    gap:15px;
+    background-color: #fefefe;
+    margin: 10% auto; 
+    padding: 33px;
+    border: 1px solid #888;
+    width: 100%; 
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.modal-content .btn-modal-edit {
+	width: 75px;
+	padding: 5px;
+	background-color: black;
+	color: white;
+	cursor: pointer;
+	border: none;
+	border-radius: 4px;
+	margin-top: 5px;
+}
+.modal-content input, label, textarea {
+	margin: 8px;
+	width: 250px;
+}
+.modal-content input, textarea {
+	border: none;
+	background-color: #e0e0e0;
+	padding: 8px;
+}
+.modal-content textarea {
+	height: 100px;
+}
+/* 닫기 버튼 스타일 */
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 1.438rem;
+    font-weight: bold;
+}
+.close-button:hover,
+.close-button:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+/* 성공 메시지 스타일 */
+.alert-success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    width:200px;
+}
+
+/* 에러 메시지 스타일 */
+.alert-danger {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    width:120px;
+}
+.alert-status{
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    width:350px;
+}
+
+/* 기본적으로 숨김 처리 */
+.UserStatus {
+    display: none; 
+    margin-top: 10px; /* 위에 있는 버튼과 간격 두기 */
+}
+
+/*버튼들을 보기 좋게 정렬 */
+.UserStatus button {
+    margin-right: 5px; 
+    width:100px;
+}
+
+/* JavaScript가 이 클래스를 추가/제거해서 보여줌 */
+.UserStatus.show {
+    display: block;
+}
+
+/* ====== 반응형 ======= */
+@media (min-width: 768px) {
+    .content .dashboard-container {
+        flex-wrap: nowrap;
+    }
+    .main-cards {
+        width: 75% !important;
+        grid-template-rows: unset;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

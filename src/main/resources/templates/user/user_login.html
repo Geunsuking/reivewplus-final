@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" 
+                  xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인폼</title>
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/user_login.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2210 0 100 100%22><text y=%22.90em%22 font-size=%2290%22>🎬</text></svg>">
+</head>
+<body>
+
+	<div id = "allLoginform">
+		<a href="/" class="logo">
+           <img th:src="@{/images/logo.png}" style ="width:150px;" alt ="로고" >
+        </a> 
+		<h2>로그인</h2>
+			<form action = "/UserLogin" method = "post" id="loginForm">
+				<span id="loginMsg" style="color: red;"></span>
+			    <input type ="email" id="email" name="email" placeholder = "이메일을 입력해주세요.">
+			    <span id="emailError" style="color: red; font-size: 0.8em;"></span><br> 
+			
+			    <input type = "password" name ="password" id="password"  placeholder = "비밀번호를 입력해주세요.">
+			    <span id="passwordError" style="color: red; font-size: 0.8em;"></span><br> 
+			    
+			    <button type = "submit" >리뷰플러스 로그인</button>
+			    <input type ="checkbox" id="rememberMe" name="remember-me">
+			    <label for="rememberMe">7일 자동 로그인</label>
+			</form>
+			
+			<!-- 회원 수정 후 /로그인 페이지 메시지 TEXT 출력 -->
+			<div th:if="${sucMsg}">
+		    	<p th:text="${sucMsg}" style="color: green; font-weight: bold; font-size:20px;"></p>
+			</div>
+			
+			<div class ="userIndex" sec:authorize="isAnonymous()">
+				<a href = "/UserJoinForm" class="btn-join">회원가입</a> 
+			</div>
+			<div class ="userIndex">
+				<a href = "/UserLoginMain" class="btn-join">다른 계정 로그인</a> 
+			</div>
+	</div>
+
+
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('error') === 'true') {
+        document.getElementById('loginMsg').innerHTML = '아이디와 비밀번호를 다시 확인해주세요.';
+    }
+</script>
+<!-- 푸터 -->
+<div th:insert="index/index :: footer"></div>
+<!-- 푸터 문의하기 -->
+<script src="js/footer.js"></script>
+	
+<!-- 유저 로그인.js -->
+<script src="/js/user_login.js"></script>
+</body>
+</html>
