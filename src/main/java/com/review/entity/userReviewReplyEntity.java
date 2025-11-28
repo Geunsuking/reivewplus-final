@@ -26,10 +26,10 @@ import lombok.NoArgsConstructor;
 public class userReviewReplyEntity {
 	   
     // 댓글 기본키 (REVIEWID와는 별개)
-    @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "REPLY_SEQ_GENERATOR")
-    @Column(name = "REPLYID")
-    private Long replyId;
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY) // <-- IDENTITY로 변경
+	@Column(name = "REPLYID")
+	private Long replyId;
 
     // 댓글은 하나인데 리뷰는 여러 개일 수 없으므로 [다대일]
     @ManyToOne(fetch = FetchType.LAZY)
