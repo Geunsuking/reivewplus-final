@@ -78,7 +78,10 @@
 | ![search png](./img/result.png) | ![movie png](./img/moviedetail.png) |
 
 ### 👤 회원 정보
-![회원 정보 조회](./img/profile.png) | ![회원 정보 변경](./img/profile edit.png)
+
+| 회원 정보 조회 | 회원 정보 변경 |
+|----------------|----------------|
+| ![회원 정보 조회](./img/profile.png) | ![회원 정보 변경](./img/profile%20edit.png) |
 
 ### 🛠 관리자 페이지
 | 회원 관리 | 영화 관리 | 리뷰 관리
