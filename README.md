@@ -2,7 +2,7 @@
 
 스프링 부트(JPA, Gradle) 기반 영화 리뷰 서비스인 **리뷰플러스**의 **업그레이드 버전**
 
-🌐 **[서비스 바로가기 →](https://reivewplus-final.onrender.com))**
+🌐 **[서비스 바로가기 →](https://reivewplus-final.onrender.com)**
 
 ## 📚 프로젝트 소개
 - **📆 프로젝트 기간 : 2025.10.27 ~ 2025.11.28**
