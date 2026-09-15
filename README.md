@@ -35,9 +35,9 @@
 ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
 
 ### 라이브러리
-![jQuery](https://img.shields.io/badge/jQuery-0769AD?logo=jquery&logoColor=white)
-![DataTables.js](https://img.shields.io/badge/DataTables.js-003B57?logo=datatables&logoColor=white)
-![Flickity](https://img.shields.io/badge/Flickity-FFCA28?logo=flickity&logoColor=black)
+![jQuery](https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)
+![DataTables.js](https://img.shields.io/badge/DataTables.js-003B57?style=for-the-badge&logo=datatables&logoColor=white)
+![Flickity](https://img.shields.io/badge/Flickity-FFCA28?style=for-the-badge&logo=flickity&logoColor=black)
 
 
 
