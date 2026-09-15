@@ -37,7 +37,7 @@
 ### 라이브러리
 ![jQuery](https://img.shields.io/badge/jQuery-0769AD?logo=jquery&logoColor=white)
 ![DataTables.js](https://img.shields.io/badge/DataTables.js-003B57?logo=datatables&logoColor=white)
-![Flickity](https://img.shields.io/badge/Flickity-FFCA28?logoColor=white)
+![Flickity](https://img.shields.io/badge/Flickity-FFCA28?logo=flickity&logoColor=black)
 
 
 
