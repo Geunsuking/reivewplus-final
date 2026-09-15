@@ -9,7 +9,7 @@
   - 조홍규(팀장): 프로젝트 총괄, 팀원 작업 보조, DB 처리, 영화 검색 결과 페이지 UI/UX 수정, 영화 검색 기능 수정, 플러터로 리뷰플러스 모바일 앱 제작
   - 김태경: 관리자 페이지 UI/UX 수정, 관리자 홈에 카드 형태의 데이터 조회 기능 추가
   - 전재율: 로그인/회원 가입 페이지 UI/UX 수정, 로그인/회원 가입 기능 수정
-  - 김근수: 홈 화면 디자인 수정, 회원 정보 조회 및 변경 기능 수정, 홈 화면 매거진 기능 추가, 뉴스 API 연동, 뉴스 캐러셀 및 드래그 UI 구현, 회원가입 DB 저장 기능 구현, 회원 탈퇴 기능 구현, 서비스 배포
+  - 김근수: 홈 화면 디자인 수정, 회원 정보 조회 및 변경 기능 수정, 홈 화면에 매거진 기능 추가, 완성된 서비스 배포
   - 강기민: 영화 상세 페이지 UI/UX 수정, 영화 좋아요, 리뷰 기능 수정, 대댓글 기능 추가
 - **핵심 기능**: 
   - **REST API**를 활용한 **실시간 최신 영화 정보 검색** 기능 + (**영화 뉴스 매거진** 기능)
@@ -35,9 +35,8 @@
 ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
 
 ### 라이브러리
-![jQuery](https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)
-![DataTables.js](https://img.shields.io/badge/DataTables.js-003B57?style=for-the-badge&logo=datatables&logoColor=white)
-![Flickity](https://img.shields.io/badge/Flickity-FFCA28?style=for-the-badge&logo=flickity&logoColor=black)
+![JQuery](https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)
+[**DataTables.js**](https://datatables.net/)
 
 
 
