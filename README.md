@@ -1,6 +1,6 @@
 ## 🎬 리뷰플러스 v2.0
 
-스프링 부트(JPA, Gradle) 기반 영화 리뷰 서비스인 **리뷰플러스**의 **업그레이드 버전**
+스프링 부트(JPA, Gradle) 기반 영화 리뷰 서비스인 **리뷰플러스**의 업그레이드 버전
 
 🌐 **[서비스 바로가기 →](https://reivewplus-final.onrender.com)**
 > ⚠️ 배포 환경 특성상 첫 접속 시 서버가 시작되기까지 약 3~5분 정도 소요될 수 있습니다.
@@ -34,12 +34,9 @@
 ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
 
 ### 라이브러리
-
 ![jQuery](https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)
 ![DataTables.js](https://img.shields.io/badge/DataTables.js-003B57?style=for-the-badge&logo=datatables&logoColor=white)
 ![Flickity](https://img.shields.io/badge/Flickity-FFCA28?style=for-the-badge&logo=flickity&logoColor=black)
-
-
 
 ### DB
 ![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=black)
